@@ -55,9 +55,9 @@ public class QuizController {
 	}
 	
 	@GetMapping("/q6")
-	public ResponseEntity q6() {
+	public ResponseEntity<String> q6() {
 		return new ResponseEntity("responsefail",HttpStatus.INTERNAL_SERVER_ERROR);
-	}
+	}//500 ok 응답 + message
 	
 	@GetMapping("/q7")
 	public ResponseEntity<CarDTO> q7(){

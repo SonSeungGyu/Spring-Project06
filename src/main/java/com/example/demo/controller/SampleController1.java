@@ -48,7 +48,7 @@ public class SampleController1 {
 	
 	
 	@GetMapping("/ex5")
-	public ResponseEntity ex5() {
+	public ResponseEntity ex5() {//아래인자에 표현하고자 하는 에러문이 없다면 제네릭 생략 가능
 		return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
